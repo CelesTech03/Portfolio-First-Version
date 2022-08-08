@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celeste's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?   family=Edu+NSW+ACT+Foundation:wght@500&family=Roboto+Slab:wght@300&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/22e16c8326.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!------Header----->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/macMemoji.png" class="logo">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!----->
+            <div class="header-text">
+                <h1>Hi, I'm Celeste Ureña</h1>
+                <p>Aspiring Software Engineer</p>
+            </div>
+        </div>
+    </div>
+
+    <!------About Me----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/IMG_5554.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a first-generation college student born in the Dominican Republic. I’m a rising senior
+                        studying Computer Science at Hunter College, based in New York. I've always had a knack
+                        for problem solving and math. My passion lies in computers and I’m inspired by how technology
+                        changes the world. I’m actively looking for software engineering new grad roles and/or
+                        internships.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C++ | Python | Swift | JavaScript | SQL </li>
+                            <li><span>Development Tools</span><br>GitHub | Git | Postman/APIs | Visual Studio Code |
+                                Xcode | MySQL/PostgreSQL | Arduino</li>
+                            <li><span>Technologies</span><br>Microsoft Azure | HTML/CSS | Jupyter Notebook | Figma</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Spring 2023</span><br>Hunter College - Bachelor of Arts in Computer Science, Minor
+                                in
+                                Mathematics</li>
+                            <li><span>Fall 2020</span><br>Borough of Manhattan Community College - Associate of
+                                Science in Computer Science</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>May 2022</span><br>CodePath iOS Development Certificate</li>
+                            <li><span>January 2022</span><br>EverUp Data Analytics Certificate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------Projects----->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <p>Here are some projects that I have worked on outside of credit courses.</p>
+            <div class="work-list1">
+
+                <div class="work">
+                    <img src="Images/Parstagram.gif">
+                    <div class="layer">
+                        <h3>Instagram App</h3>
+                        <p>Instagram clone with a custom Parse backend that allows a user to post photos,
+                            view a global photos feed, and add comments!</p>
+                        <a href="https://github.com/CelesTech03/Instagram" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/Yelpy.gif">
+                    <div class="layer">
+                        <h3>Yelp App</h3>
+                        <p>App that integrates Yelp Fusion API, custom MongoDB + Parse backend server
+                            hosted on Back4App.</p>
+                        <a href="https://github.com/CelesTech03/Yelpy" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/Flix.gif">
+                    <div class="layer">
+                        <h3>Movie App</h3>
+                        <p>App that allows users to browse movies from the The Movie Database API.</p>
+                        <a href="https://github.com/CelesTech03/Flix" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/Twitter.gif">
+                    <div class="layer">
+                        <h3>Twitter App</h3>
+                        <p>A read-write twitter client that allows users to view and compose tweets using the Twitter
+                            API.</p>
+                        <a href="https://github.com/CelesTech03/Twitter" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list2">
+
+                <div class="work">
+                    <img src="Images/restaurantWebsite.png">
+                    <div class="layer">
+                        <h3>Restaurant Website</h3>
+                        <p>Moroccan Restaurant Website. Built using HTML/CSS.</p>
+                        <a href="https://github.com/CelesTech03/Restaurant-Website" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/informativeWebsite.png">
+                    <div class="layer">
+                        <h3>Informative Website</h3>
+                        <p>An informative travel theme website about the Dominican Republic. Built using HTML/CSS.</p>
+                        <a href="https://github.com/CelesTech03/Informative-Website" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/travelBlog.png">
+                    <div class="layer">
+                        <h3>Travel Blog Website</h3>
+                        <p>Simple travel blog website. Built using HTML/CSS and JavaScript.</p>
+                        <a href="https://project-2-hacked-website-qcc2022edlc2w4-3.qcc2022edlc2w4.repl.co/"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/CelesTech03" target="_blank" class="btn">See More!</a>
+
+        </div>
+    </div>
+
+    <!------Contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>celeste.urena03@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/celeste-ure%C3%B1a-323709170/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/CelesTech03" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1GqhmS3FrLpN8TvWh6FNjL3tZVVxyk9oC/view?usp=sharing"
+                        target="_blank" class="btn btn2">View Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="mailto:celeste.urena03@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="8"
+                            placeholder="Your Message. Thank you for visiting :)"></textarea>
+                        <button type="submit" value="submit" class="btn btn2"
+                            onclick="alert('Message sent!')">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>ⓒ 2022 Celeste Ureña <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
